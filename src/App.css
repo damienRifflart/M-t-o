@@ -2,4 +2,11 @@
   --bg: #f0f2f4;
   --accent: #1f65d6;
   --secondary: #bdd7f9;
+  font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
+}
+
+span {
+  color: var(--accent);
+  font-weight: bold;
 }
