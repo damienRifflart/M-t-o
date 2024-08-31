@@ -1,7 +1,7 @@
 {
   "name": "meteo-website",
   "private": true,
-  "homepage": "https://github.com/damienRifflart/MeteoMatin",
+  "homepage": "https://damienRifflart.github.io/MeteoMatin",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
