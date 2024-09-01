@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">
+  <br>
+  <img src="public/sun.png" alt="SunIcon" width="200"></a>
+  <br>
+    Météo Matin
+  <br>
+</h1>
 
-Currently, two official plugins are available:
+<h4 align="center">Recevez votre météo personnalisée quotidiennement!</h4>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+J'ai initiallement réalisé ce project pour m'entraîner au design et au code, mais il sera entièrement fontionnel dans un futur proche.
 
-## Expanding the ESLint configuration
+## Site web
+Vous pouvez voir le site web à l'adresse suivante: https://damienrifflart.github.io/MeteoMatin/
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Réalisé avec:
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Figma](https://figma.com/)
+  
+## Mes autres projets
+- [Shapy](https://github.com/damienRifflart/Shapy) - Une application iOs pour le sport.
+- [StudyStats](https://github.com/damienRifflart/StudyStats) - Récupère automatiquement le nombre d'heures et de cours pour les 100 prochains jours.
 
-- Configure the top-level `parserOptions` property like this:
+## Contact
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+> Gmail: [rifflartdamiencontact@gmail.com](rifflartdamiencontact@gmail.com) &nbsp;&middot;&nbsp;
+> GitHub: [@damienRifflart](https://github.com/damienRifflart) &nbsp;&middot;&nbsp;
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
